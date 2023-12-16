@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Flavor Fiesta!</title>
+</head>
+<body>
+<h1>Happy Cooking!</h1>
+
+<h2 sec:authorize="isAuthenticated()"> Hi logged user </h2>
+</body>
+</html>

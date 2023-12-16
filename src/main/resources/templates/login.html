@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<div class="login">
+    <div class="rightSide-login">
+        <div class="auth-container">
+            <form th:method="post"
+                    th:action="@{/users/login}" method="post">
+
+                <h2 class="loginRegLabel">Login</h2>
+                <div class="form-group">
+                    <label for="username" >
+                        Username:
+                    </label>
+                    <input
+                            name="username"
+                            type="text"
+                            id="username"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password" >
+                        Password:
+                    </label>
+                    <input
+                            name="password"
+                            type="password"
+                            id="password"
+                    />
+                </div>
+                <button type="submit" variant="dark" class="loginBtn">
+                    Login
+                </button>
+<!--                <p class="login-link">-->
+<!--                    You don't have an account?-->
+<!--                    <Link-->
+<!--                            style={{ textDecoration: "none", color: "black" }}-->
+<!--                    to="/register"-->
+<!--                    >-->
+<!--                    <span> Register</span>-->
+<!--                    </Link>-->
+<!--                </p>-->
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

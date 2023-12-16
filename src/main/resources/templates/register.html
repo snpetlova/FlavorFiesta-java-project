@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+<div class="register">
+
+    <div class="rightSide-register">
+        <div class="auth-container">
+            <form th:method="POST" th:object="${userRegisterDto}" th:action="@{/users/register}">
+                <h2 class="loginRegLabel">Register</h2>
+                <div class="form-group">
+                    <label for="username">
+                        Username:
+                    </label>
+                    <input type="text" class="form-control" id="username" name="username"
+                           th:field="*{username}" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        Email:
+                    </label>
+                    <input type="text" class="form-control" id="email" name="email"
+                           th:field="*{email}" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">
+                        Password:
+                    </label>
+                    <input type="password" class="form-control" id="password" name="password"
+                           th:field="*{password}" placeholder="Enter your password">
+                </div>
+                <button type="submit" variant="dark" class="registerBtn">
+                    Register
+                </button>
+<!--                <p class="register-link">-->
+<!--                    You have an account?-->
+<!--                    <Link-->
+<!--                            style={{ textDecoration: "none", color: "black" }}-->
+<!--                    to="/login"-->
+<!--                    >-->
+<!--                    <span> Log in</span>-->
+<!--                    </Link>-->
+<!--                </p>-->
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

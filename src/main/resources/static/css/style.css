@@ -1,0 +1,70 @@
+background-image-login{
+    background-image: url(static/img/953728c59e28e7e13550344d08f1b52a.jpg);
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.leftSide-register {
+    flex: 1;
+    padding: 20px;
+}
+
+.leftSide-register img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.rightSide-register {
+    flex: 1;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.register-link {
+    margin-top: 1em;
+}
+
+.loginRegLabel {
+    margin-bottom: 1em;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 400px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.error-message-container {
+    height: 20px;
+    overflow: hidden;
+}
+
+.error-message {
+    color: red;
+    align-items: center;
+}
+
+.alert-danger {
+    height: 3.5em;
+}
+
